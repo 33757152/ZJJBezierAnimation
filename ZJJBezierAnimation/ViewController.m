@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ShowViewController.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"首页";
+    NSArray *arr = @[@"直线",@"曲线",@"抛物线",@"圆形"];
+    for (NSInteger i = 0; i<4; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(100, 100+80*i, 100, 50);
+        button.backgroundColor = [UIColor yellowColor];
+        [button setTitle:arr[i] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(comeOut:) forControlEvents:UIControlEventTouchUpInside];
+        button.tag = 100 + i;
+        [self.view addSubview:button];
+    }
 }
 
+- (void)comeOut:(UIButton *)sender {
+    ShowViewController *vc = [ShowViewController new];
+    vc.typeInt = sender.tag - 100;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

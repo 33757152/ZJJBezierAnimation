@@ -13,6 +13,8 @@
 		89E42476201823040046871B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E42475201823040046871B /* Assets.xcassets */; };
 		89E42479201823040046871B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E42477201823040046871B /* LaunchScreen.storyboard */; };
 		89E4247C201823040046871B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E4247B201823040046871B /* main.m */; };
+		89E42484201823460046871B /* ZAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E42483201823460046871B /* ZAnimationView.m */; };
+		89E42487201834A20046871B /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E42486201834A20046871B /* ShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		89E42478201823040046871B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89E4247A201823040046871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E4247B201823040046871B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89E42482201823460046871B /* ZAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAnimationView.h; sourceTree = "<group>"; };
+		89E42483201823460046871B /* ZAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZAnimationView.m; sourceTree = "<group>"; };
+		89E42485201834A20046871B /* ShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		89E42486201834A20046871B /* ShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,14 @@
 		89E4246B201823040046871B /* ZJJBezierAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				89E42482201823460046871B /* ZAnimationView.h */,
+				89E42483201823460046871B /* ZAnimationView.m */,
 				89E4246C201823040046871B /* AppDelegate.h */,
 				89E4246D201823040046871B /* AppDelegate.m */,
 				89E4246F201823040046871B /* ViewController.h */,
 				89E42470201823040046871B /* ViewController.m */,
+				89E42485201834A20046871B /* ShowViewController.h */,
+				89E42486201834A20046871B /* ShowViewController.m */,
 				89E42472201823040046871B /* Main.storyboard */,
 				89E42475201823040046871B /* Assets.xcassets */,
 				89E42477201823040046871B /* LaunchScreen.storyboard */,
@@ -142,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E42484201823460046871B /* ZAnimationView.m in Sources */,
+				89E42487201834A20046871B /* ShowViewController.m in Sources */,
 				89E42471201823040046871B /* ViewController.m in Sources */,
 				89E4247C201823040046871B /* main.m in Sources */,
 				89E4246E201823040046871B /* AppDelegate.m in Sources */,
